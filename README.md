@@ -23,6 +23,7 @@ Future enhancements may include:
 ```text
 .
 ├── main.tf
+├── provider.tf
 ├── variables.tf
 ├── terraform.tfvars
 ├── .github
