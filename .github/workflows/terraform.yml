@@ -1,9 +1,13 @@
-name: Terraform Validation + Plan
+name: Terraform Validation + Plan + Apply
 
 on:
   push:
     branches:
       - main
+    paths:
+      - "*.tf"
+      - "*.tfvars"
+      - ".github/workflows/*"
 
 jobs:
   terraform:
@@ -40,6 +44,6 @@ jobs:
 
       - name: Terraform Plan
         run: terraform plan
-        
+
       - name: Terraform Apply
         run: terraform apply -auto-approve
