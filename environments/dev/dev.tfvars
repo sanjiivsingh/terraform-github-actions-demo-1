@@ -1,6 +1,6 @@
 rgdetails = {
   rg1 = {
-    name     = "do-not-delete"
+    name     = "rg-dev-01"
     location = "centralindia"
   }
 }
