@@ -68,6 +68,17 @@ Azure Resource Group
 * Azure Authentication
 * Infrastructure Automation
 
+## Features Implemented
+
+- Terraform Validation
+- Terraform Plan
+- Terraform Apply
+- Azure Remote Backend
+- GitHub Secrets
+- Service Principal Authentication
+- Plan Artifact Generation
+- Manual Deployment Approval
+
 ## Author
 
 Sanjeev Kumar Singh
