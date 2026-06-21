@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+      - dev
+
     paths:
       - '**.tf'
       - '**.tfvars'
@@ -11,6 +13,8 @@ on:
 jobs:
 
   plan:
+    env:
+      TF_VAR_FILE: environments/dev.tfvars
 
     runs-on: ubuntu-latest
 
@@ -44,7 +48,7 @@ jobs:
         run: terraform validate
 
       - name: Terraform Plan
-        run: terraform plan -out=tfplan -var-file=environments/dev.tfvars
+        run: terraform plan -out=tfplan -var-file=$TF_VAR_FILE
 
       - name: Upload Plan Artifact
         uses: actions/upload-artifact@v4
