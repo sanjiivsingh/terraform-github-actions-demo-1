@@ -78,6 +78,7 @@ Azure Resource Group
 - Service Principal Authentication
 - Plan Artifact Generation
 - Manual Deployment Approval
+- Environment specific tfvars created
 
 ## Author
 
