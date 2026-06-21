@@ -53,6 +53,8 @@ jobs:
 
     needs: plan
 
+    environment: dev
+
     runs-on: ubuntu-latest
 
     steps:
